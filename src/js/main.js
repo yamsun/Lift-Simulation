@@ -124,12 +124,14 @@ var moveLift = (lift, floorNum, direction) => {
   }, moveTime * 1000 + 1000);
   setTimeout(() => {
     lift.classList.remove("moving");
-    if (direction == "UP" && floorNum !== parseInt(floorInput.value)) {
-      moveLift(lift, parseInt(floorInput.value), "UP");
-    }
-    if (direction == "DOWN" && floorNum !== 1) {
-      moveLift(lift, 1, "DOWN");
-    }
+    // if (direction == "UP" && floorNum !== parseInt(floorInput.value)) {
+    //   moveLift(lift, parseInt(floorInput.value), "UP");
+    // }
+    // if (direction == "DOWN") {
+    //   if (floorNum !== 1) {
+    //     moveLift(lift, 1, "DOWN");
+    //   }
+    // }
   }, moveTime * 2000 + 1000);
 };
 
