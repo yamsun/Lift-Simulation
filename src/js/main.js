@@ -51,7 +51,6 @@ document.addEventListener("click", (e) => {
     if (e.target.dataset.floorNum == currentFloor) {
       return;
     }
-    // checkForLift(e.target.dataset.floorNum, e.target.dataset.direction);
     const floorNum = e.target.dataset.floorNum;
     const direction = e.target.dataset.direction;
     console.log(floorNum, direction);
